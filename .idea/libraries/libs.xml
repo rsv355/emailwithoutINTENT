@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android-javamail-tutorial-master/JavamailTutorial/libs/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-javamail-tutorial-master/JavamailTutorial/libs/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-javamail-tutorial-master/JavamailTutorial/libs/additionnal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android-javamail-tutorial-master/JavamailTutorial/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
