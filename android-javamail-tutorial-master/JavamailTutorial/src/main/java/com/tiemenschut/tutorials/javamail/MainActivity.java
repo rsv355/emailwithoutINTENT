@@ -21,8 +21,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class MainActivity extends Activity {
-    private static final String username = "khemchandpatel@gmail.com";
-    private static final String password = "881403716";
+    private static final String username = "softeng.krishna@gmail.com";
+    private static final String password = "password";
     private EditText emailEdit;
     private EditText subjectEdit;
     private EditText messageEdit;
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
 
     private Message createMessage(String email, String subject, String messageBody, Session session) throws MessagingException, UnsupportedEncodingException {
         Message message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("khemchandpatel@gmail.com", "881403716"));
+        message.setFrom(new InternetAddress("softeng.krishna@gmail.com", "password"));
         message.addRecipient(Message.RecipientType.TO, new InternetAddress(email, email));
         message.setSubject(subject);
         message.setText(messageBody);
@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.host", "smtp.gmail.com");
-        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.port", "465");
 
         return Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
